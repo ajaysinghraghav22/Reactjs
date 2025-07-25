@@ -1,0 +1,553 @@
+/* Base Styles */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    margin: 0.5rem auto 0;
+  }
+  
+  .section-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    padding: 4rem 1rem;
+    border-radius: 12px;
+    margin: 2rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+  }
+  
+  .hero-bus-icon {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    margin: 5rem 0;
+  }
+  
+  .mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  
+  .mission-content strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    min-width: 120px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Features Section */
+  .features-section {
+    margin: 5rem 0;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    color: #3498db;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .feature-card p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Future Section */
+  .future-section {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background: #f9f9f9;
+    border-radius: 12px;
+  }
+  
+  .future-grid .feature-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+  }
+  
+  .future-grid .feature-icon {
+    color: #e74c3c;
+  }
+  
+  .closing-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  .closing-message svg {
+    color: #f39c12;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    margin: 5rem 0;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #e74c3c;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.6rem;
+    }
+    
+    .mission-content p {
+      font-size: 1rem;
+    }
+    
+    .stat-box {
+      padding: 1rem 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 3rem 1rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+    
+    .stats-container {
+      gap: 1rem;
+    }
+    
+    .stat-box {
+      min-width: 100px;
+      padding: 1rem;
+    }
+  }
+  /* Add these new styles to your existing AboutPage.css */
+
+/* Happiness Poster */
+.happiness-poster {
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
+    color: white;
+    border-radius: 12px;
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.3);
+  }
+  
+  .poster-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .happy-users-grid {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .user-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .user-photo:nth-child(1) {
+    left: 0;
+  }
+  .user-photo:nth-child(2) {
+    left: 80px;
+  }
+  .user-photo:nth-child(3) {
+    left: 160px;
+  }
+  
+  .poster-message {
+    flex: 1;
+    position: relative;
+  }
+  
+  .poster-message h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .poster-message p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  .floating-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .floating-icons svg {
+    position: absolute;
+    opacity: 0.7;
+  }
+  
+  .icon-1 {
+    top: -20px;
+    right: -10px;
+    font-size: 2rem;
+    color: #ffdd59;
+  }
+  
+  .icon-2 {
+    top: 30px;
+    right: -30px;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+  }
+  
+  .icon-3 {
+    top: 60px;
+    right: 0;
+    font-size: 2.2rem;
+    color: #f7f1e3;
+  }
+  
+  /* Happy Stats */
+  .happy-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .stat-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .stat-icon {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Testimonials */
+  .testimonials-section {
+    margin: 5rem 0;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 1rem;
+  }
+  
+  .user-details h4 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .user-details p {
+    margin: 0.2rem 0 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .testimonial-quote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating {
+    display: flex;
+    color: #ff6b6b;
+  }
+  
+  .rating svg {
+    margin-right: 0.3rem;
+  }
+  
+  .rating .empty {
+    color: #ddd;
+  }
+  
+  /* Bus Animation */
+  .hero-bus-container {
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .hero-bus-icon {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bus-smoke {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(5px);
+  }
+  
+  /* Feature Icons */
+  .icon-container {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+  }
+  
+  .future-card .feature-icon {
+    color: #e74c3c;
+  }
+  
+  /* CTA Enhancements */
+  .cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+  
+  .cta-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 50px;
+    height: 200%;
+    background: rgba(255,255,255,0.2);
+    transform: rotate(30deg);
+    transition: all 0.5s;
+  }
+  
+  .cta-button:hover::after {
+    left: 120%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .poster-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .happy-users-grid {
+      margin: 0 auto;
+    }
+    
+    .floating-icons {
+      display: none;
+    }
+    
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
